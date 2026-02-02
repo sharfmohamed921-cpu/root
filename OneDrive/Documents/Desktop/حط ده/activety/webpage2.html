@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>قصص جحا</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            direction: rtl;
+            margin: 20px;
+            line-height: 1.8;
+        }
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+        }
+        p {
+            font-size: 18px;
+            color: #34495e;
+        }
+        a {
+            display: inline-block;
+            margin-top: 10px;
+            color: #2980b9;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        img {
+            display: block;
+            margin: 20px auto;
+            border-radius: 8px;
+        }
+        button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #27ae60;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #2ecc71;
+        }
+        #hiddenElement {
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #bdc3c7;
+            border-radius: 5px;
+            background-color: #ecf0f1;
+        }
+    </style>
+</head>
+<body>
+<h1>اضحك من قلبك مع جحا </h1>
+<p>
+    جحا هو شخصية تراثية مشهورة في الأدب العربي، عُرف بحكمته وبقصصه المليئة بالمواقف الطريفة والمليئة بالدروس.
+</p>
+<a href="https://ar.wikipedia.org/wiki/جحا" target="_blank">اقرأ المزيد عن جحا</a>
+<img src="https://th.bing.com/th/id/OIP.MrbivhA8MLz-TZhFT7-X6QHaHa?rs=1&pid=ImgDetMain/300x200" alt="صورة تعبيرية لجحا">
+
+<button onclick="alert('هل سمعت قصة جحا والحمار؟')">اضغط لمعرفة قصة</button>
+<div id="hiddenElement" style="display: none;">
+    <p><strong>قصة جحا والحمار:</strong></p>
+    <p>
+        في أحد الأيام، ضاع حمار جحا، فبدأ يبحث عنه في كل مكان. وعندما سأله الناس ماذا يفعل، قال:
+        "أبحث عن حماري، وإذا لم أجده فسأشتري واحدًا أفضل منه!"
+    </p>
+</div>
+<button onclick="document.getElementById('hiddenElement').style.display = 'block';">
+    أظهر القصة المخفية
+</button>
+</body>
+</html>
